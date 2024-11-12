@@ -160,7 +160,9 @@ def main():
     parser.add_argument('infile')
     args=parser.parse_args()
     gs = readGenomes(args.infile)
-    display_chromosomes(gs[0][1])
+    for g in gs:
+        print("%Genome '{}'".format(g[0]))
+        display_chromosomes(g[1])
     
 
 
