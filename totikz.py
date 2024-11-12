@@ -165,5 +165,5 @@ def main():
         display_chromosomes(g[1])
     
 
-
-main()
+if __name__ == '__main__':
+    main()
